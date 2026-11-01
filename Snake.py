@@ -11,7 +11,7 @@ high_score = 0
 # Set up the screen
 wn = turtle.Screen()
 wn.title("Snake Game")
-wn.bgcolor("black")
+wn.bgcolor("green")
 wn.setup(width=650, height=750)
 wn.tracer(0)
 
@@ -32,7 +32,7 @@ border.hideturtle()
 head = turtle.Turtle()
 head.speed(0)
 head.shape("square")
-head.color("white")
+head.color("red")
 head.penup()
 head.goto(0, 0)
 head.direction = "stop"
@@ -41,7 +41,7 @@ head.direction = "stop"
 food = turtle.Turtle()
 food.speed(0)
 food.shape("circle")
-food.color("red")
+food.color("yellow")
 food.penup()
 food.goto(0, 100)
 
@@ -129,7 +129,7 @@ def game_loop():
         new_segment = turtle.Turtle()
         new_segment.speed(0)
         new_segment.shape("square")
-        new_segment.color("grey")
+        new_segment.color("darkred")
         new_segment.penup()
         segments.append(new_segment)
 
